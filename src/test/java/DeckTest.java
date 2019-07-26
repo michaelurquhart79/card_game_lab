@@ -14,23 +14,24 @@ public class DeckTest {
         card1 = new Card(SuitType.HEARTS, RankType.ACE);
     }
     @Test
-    public void startsAtZero(){
-        assertEquals(0, deck.getCardCount());
+    public void startsAt52CardsShuffled(){
+        assertEquals(52, deck.getCardCount());
+//        assertEquals(0, deck.getCardCount());
     }
 
-    @Test
-    public void canAddCardToDeck(){
-        deck.addCard(card1);
-        assertEquals(1, deck.getCardCount());
-    }
-    @Test
-    public void canPopulateDeck(){
-        deck.populateDeck();
-        assertEquals(52, deck.getCardCount());
-    }
+//    @Test
+//    public void canAddCardToDeck(){
+//        deck.addCard(card1);
+//        assertEquals(1, deck.getCardCount());
+//    }
+//    @Test
+//    public void canPopulateDeck(){
+//        deck.populateDeck();
+//        assertEquals(52, deck.getCardCount());
+//    }
     @Test
     public void canDealCard(){
-        deck.populateDeck();
+//        deck.populateDeck();
         deck.dealCard();
         assertEquals(51, deck.getCardCount());
     }

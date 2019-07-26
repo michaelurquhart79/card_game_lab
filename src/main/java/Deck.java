@@ -6,7 +6,10 @@ public class Deck {
     private ArrayList<Card> cardDeck;
 
     public Deck() {
+
         this.cardDeck = new ArrayList<Card>();
+        populateDeck();
+        shuffleDeck();
     }
 
     public int getCardCount() {

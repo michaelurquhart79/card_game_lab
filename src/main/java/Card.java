@@ -15,4 +15,8 @@ public class Card {
     public RankType getRank() {
         return rank;
     }
+
+    public int getFieldFromEnum() {
+        return this.rank.getField();
+    }
 }
